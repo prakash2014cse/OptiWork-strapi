@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comuunities",
+      "handler": "comuunities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comuunities/count",
+      "handler": "comuunities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comuunities/:id",
+      "handler": "comuunities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comuunities",
+      "handler": "comuunities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comuunities/:id",
+      "handler": "comuunities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comuunities/:id",
+      "handler": "comuunities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

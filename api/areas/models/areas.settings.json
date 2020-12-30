@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "name": "Areas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "AreaName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "CommunityId": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    }
+  }
+}

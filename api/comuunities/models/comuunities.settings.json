@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comuunities",
+  "info": {
+    "name": "Comuunities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "CommunityName": {
+      "type": "string"
+    }
+  }
+}
