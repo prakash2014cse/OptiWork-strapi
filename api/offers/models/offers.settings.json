@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "regions",
+  "collectionName": "offers",
   "info": {
-    "name": "Regions",
+    "name": "Offers",
     "description": ""
   },
   "options": {
@@ -11,13 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "RegionName": {
-      "type": "string",
-      "required": true
+    "offerPrice": {
+      "type": "biginteger"
     },
-    "communities": {
-      "via": "region",
-      "collection": "communities"
+    "Supplier": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "offers"
     }
   }
 }

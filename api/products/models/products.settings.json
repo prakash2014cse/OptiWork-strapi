@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ProductName": {
+      "type": "string"
+    },
+    "orders": {
+      "collection": "orders",
+      "via": "product"
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true
+    },
+    "pricePerHour": {
+      "type": "integer"
+    },
+    "minBookingTime": {
+      "type": "time"
+    },
+    "flatRate": {
+      "type": "integer"
+    },
+    "isFlatRate": {
+      "type": "boolean",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

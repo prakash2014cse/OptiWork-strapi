@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "comuunities",
+  "collectionName": "communities",
   "info": {
     "name": "Communities",
     "description": ""
@@ -11,8 +11,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "CommunityName": {
-      "type": "string"
+    "communtyName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "region": {
+      "model": "regions",
+      "via": "communties"
     }
   }
 }

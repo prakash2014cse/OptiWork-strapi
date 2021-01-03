@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "orderName": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "address": {
+      "type": "string"
+    },
+    "latLang": {
+      "type": "float"
+    },
+    "ActiveTime": {
+      "type": "integer"
+    },
+    "StartPrice": {
+      "type": "biginteger"
+    },
+    "isPriceFixed": {
+      "type": "boolean"
+    },
+    "hourlyPrice": {
+      "type": "biginteger"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Customer": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "orders"
+    },
+    "product": {
+      "via": "orders",
+      "model": "products"
+    }
+  }
+}

@@ -11,31 +11,22 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "quoteTitle": {
-      "type": "text"
-    },
-    "SupplierID": {
-      "type": "biginteger"
-    },
     "userId": {
       "type": "biginteger",
       "unique": true,
       "required": true
     },
-    "categoryId": {
-      "type": "biginteger"
-    },
     "date": {
       "type": "time"
-    },
-    "description": {
-      "type": "richtext"
     },
     "address": {
       "type": "text"
     },
     "latLang": {
       "type": "decimal"
+    },
+    "offers": {
+      "collection": "offers"
     }
   }
 }
