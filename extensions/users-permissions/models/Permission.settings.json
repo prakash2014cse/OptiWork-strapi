@@ -38,11 +38,6 @@
       "via": "permissions",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "regionId": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
     }
   }
 }
