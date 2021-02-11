@@ -15,9 +15,28 @@
       "type": "biginteger"
     },
     "Supplier": {
+      "via": "offer",
       "plugin": "users-permissions",
-      "model": "user",
+      "model": "user"
+    },
+    "supplierName": {
+      "type": "string"
+    },
+    "order": {
+      "model": "orders",
       "via": "offers"
+    },
+    "isAccepted": {
+      "type": "boolean",
+      "default": false
+    },
+    "acceptedCustomer": {
+      "type": "integer"
+    },
+    "acceptedUser": {
+      "via": "offers",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

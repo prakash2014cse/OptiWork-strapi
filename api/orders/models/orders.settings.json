@@ -52,13 +52,24 @@
       "required": false
     },
     "Customer": {
+      "via": "orders",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "orders"
+      "model": "user"
     },
     "product": {
-      "via": "orders",
-      "model": "products"
+      "model": "products",
+      "via": "orders"
+    },
+    "offers": {
+      "via": "order",
+      "collection": "offers"
+    },
+    "expiryDate": {
+      "type": "datetime"
+    },
+    "isAgrementMade": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

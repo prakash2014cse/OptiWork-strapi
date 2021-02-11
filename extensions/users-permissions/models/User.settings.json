@@ -60,12 +60,19 @@
       "configurable": false
     },
     "orders": {
-      "via": "Customer",
-      "collection": "orders"
+      "collection": "orders",
+      "via": "Customer"
+    },
+    "offer": {
+      "collection": "offers",
+      "via": "Supplier"
     },
     "offers": {
-      "via": "Supplier",
-      "collection": "offers"
+      "collection": "offers",
+      "via": "acceptedUser"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
