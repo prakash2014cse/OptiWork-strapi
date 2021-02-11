@@ -15,8 +15,8 @@
       "type": "string"
     },
     "orders": {
-      "collection": "orders",
-      "via": "product"
+      "via": "product",
+      "collection": "orders"
     },
     "isActive": {
       "type": "boolean",
@@ -39,7 +39,7 @@
       "type": "richtext"
     },
     "Images": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
