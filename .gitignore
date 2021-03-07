@@ -114,3 +114,4 @@ build
 .strapi-updater.json
 node_modules
 .history
+.tmp
